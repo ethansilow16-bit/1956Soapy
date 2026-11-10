@@ -1,0 +1,2001 @@
+RecReading = true
+
+campaignTrail_temp.modBoxTheme = {
+
+ 	"header_color": "#545838",
+
+ 	"header_text_color": "#FFFFFF",
+
+	"header_image_url": "https://i.imgur.com/l7puy6b.png",
+
+ 	"description_text_color": "#FFFFFF",
+
+ 	"description_background_color": "#235261",
+
+ 	"main_color": "#34613e",
+
+ 	"secondary_color": "#34613e",
+
+ 	"ui_text_color": "#FFFFFF"
+
+}
+
+e = campaignTrail_temp;
+
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#adaa90";
+
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#dbdbd5";
+
+
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+
+
+$(".container")[0].style.backgroundColor = "#a8a8a2";
+
+
+
+document.getElementById("header").src = "https://i.imgur.com/lQFHheE.png";
+
+
+
+document.body.background = "https://i.imgur.com/E5NDXql.jpeg";
+
+
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color: #dbdbd5!important;}</style>";
+
+
+
+campaignTrail_temp.election_json = [
+
+    {
+
+        "model": "campaign_trail.election",
+
+        "pk": 11,
+
+        "fields": {
+
+            "year": 1960,
+
+            "summary": "<p>After Dwight Eisenhower’s heart attack in 1955, he announced his intention to be a one term President. This put forward two new candidates to debate the issues of the election. With communists, the economy, farmers, highways becoming the talk of town, it seems that this election will usher a new era of American history.</p><ul><li>Governor Williams needs to prove his sense of liberalism and populist nature can offer a path forward that can help the people. Only time will tell.</li><li>Vice President Nixon acts as a continuation of the Eisenhower administration. His combination of moderate polices have given the lead in the polls. But will it last?</p>",
+
+            "image_url": "https://i.imgur.com/VCohR15.png",
+
+            "winning_electoral_vote_number": 266,
+
+            "advisor_url": "https://i.imgur.com/4uzS4R6.png",
+
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">1960 Election Books and Links</h4>David Pietrusza - <a href=\"http://www.amazon.com/exec/obidos/ASIN/1402777469/amhius20-20\" target=\"_blank\">1960--LBJ vs. JFK vs. Nixon: The Epic Campaign That Forged Three Presidencies</a></br>Theodore White - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0061900605/amhius20-20\" target=\"_blank\">The Making of the President 1960</a></br>W. J. Rorabaugh - <a href=\"http://www.amazon.com/exec/obidos/ASIN/0700618872/amhius20-20\" target=\"_blank\">The Real Making of the President: Kennedy, Nixon, and the 1960 Election</a></br><a href=\"http://www.davidpietrusza.com/1960-cast-of-characters.html\" target=\"_blank\">1960 Cast of Characters</a></br><a href=\"https://www.youtube.com/watch?v=gbrcRKqLSRw\" target=\"_blank\">First Kennedy-Nixon Debate (video)</a></br><a href=\"https://www.youtube.com/watch?v=_CtSW-HQlxQ\" target=\"_blank\">The Making of the President 1960 (video documentary, 1963)</a>",
+
+            "has_visits": 1,
+
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/1960-no-majority-photo.jpg",
+
+            "creator": "Dan Bryan",
+
+            "display_year": "1962"
+
+        }
+
+    }
+
+]
+
+
+
+campaignTrail_temp.candidate_json = [
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 105,
+
+        "fields": {
+
+            "first_name": "Soapy",
+
+            "last_name": "Williams",
+
+            "election": 11,
+
+            "party": "Democrat",
+
+            "state": "Michigan",
+
+            "priority": 1,
+
+            "description": "<p>The son of soapers and Michigan natives, Gerhard Williams was always was on the radar for success in his future. Ever since a young age, he always had knack for speeches. Williams was always aware of those social and political state of the United States with his senior thesis “Social Significance of Henry Ford”. Williams became an attorney in Michigan and was soon elected the Governor in 1948.</p><p>Soapy was always on the more liberal end of the Democratic spectrum. He was a champion of African American and union rights. This has made him controversial among some conservative and moderate Democrats who  find him unelectable. This has led to South Carolina Governor George Timmerman running third party. And Vice President Nixon has a lead in the polls. But even with all of that, it is not out of the realm of possibility for the 35th President to be Gerhard Williams.</p>",
+
+            "color_hex": "#004c9d",
+
+            "secondary_color_hex": "#90C0FF",
+
+            "is_active": 1,
+
+            "image_url": "https://i.imgur.com/oteFSX5.png",
+
+            "electoral_victory_message": "<h3>Congratulations! You have won the 1960 Presidential Election.</h3><p>Hopefully you can move the United States in a more modern direction after eight quiet years of Eisenhower, while holding the line against the Soviet Union. At your young age, you have the potential to define the entire decade as President, and perhaps to hand the torch to one of your brothers in the future.</p>",
+
+            "electoral_loss_message": "<h3>Sorry, you have lost the 1960 Presidential Election.</h3><p>It was always going to be tough to defeat the Vice President to someone as popular as Eisenhower. However, you still have your seat in the Senate. At your young age, there is no reason you couldn't be a strong contender for President in 1964 or 1968, especially if this election was close. Let's just hope the Democrats don't blame your defeat on your religion.</p>",
+
+            "no_electoral_majority_message": "<h3>No candidate has won a majority in the Electoral College.</h3><p>The Democrats have an advantage in the House of Representatives, so you are probably in good shape. However, a lot depends on how you deal with Harry Byrd. It's possible that some kind of deal will need to be struck with Byrd or Nixon to get a clean majority in the House.</p>",
+
+            "description_as_running_mate": "'",
+
+            "candidate_score": 1,
+
+            "running_mate": false
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 106,
+
+        "fields": {
+
+            "first_name": "Richard",
+
+            "last_name": "Nixon",
+
+            "election": 11,
+
+            "party": "Republican",
+
+            "state": "California",
+
+            "priority": 2,
+
+            "description": "<p>The son of poor Quaker immigrants, Richard Nixon never had life handed to him on a silver plate. He grew up on a lemon farm in California before hanging around his father’s gas station. Nixon had ambitions ever since he was a young boy when he ran and lost class President in high school. Dick’s ambition and drive was never hindered and soon he was serving his country in the Navy. Soon after his service, he beat Congressman Jerry Voorhis.</p><p>Nixon soon made a name for himself as an aggressive Republican in the House and Senate. He soon found himself in the grasp of Joe McCarthy, sitting alongside him in hearings. But despite McCarthy and shady financial dealings, Nixon seized a landslide victory alongside General Dwight Eisenhower. Despite his aggressive nature, Nixon found himself mostly observing while in the Vice Presidency Chair. But now he stands as the nominee for the Grand Old Party. Only god knows what will happen at this point.</p>",
+
+            "color_hex": "#d60071",
+
+            "secondary_color_hex": "#FFA0A0",
+
+            "is_active": 1,
+
+            "image_url": "https://i.imgur.com/AuAHMAT.png",
+
+            "electoral_victory_message": "<h3>Congratulations! You have won the 1960 Presidential Election.</h3><p>With luck, you will be able to duplicate the eight years of peace and prosperity under Eisenhower. Unfortunately, the Democrats maintain their majority in both houses of Congress. With luck, they will be good partners in a bipartisan governing coalition. Your first order of business is to mend fences with Lyndon Johnson, who is returning to his role as Senate Majority Leader.</p>",
+
+            "electoral_loss_message": "<h3>Sorry, you have lost the 1960 Presidential Election.</h3><p>A lot of people think this election was yours to lose, and party operatives are already whispering that Nelson Rockefeller will be the frontrunner in 1964. As such, it appears that your chances of becoming President are over. Perhaps you can return to California and run for Governor, or for the Senate again.</p>",
+
+            "no_electoral_majority_message": "<h3>No candidate has won a majority in the Electoral College.</h3><p>The Democrats have an advantage in the House of Representatives, so you are probably in bad shape. However, a lot depends on how Kennedy deals with Harry Byrd. It's possible that some kind of deal will need to be struck for any candidate to get a clean majority in the House.</p>",
+
+            "description_as_running_mate": "'",
+
+            "candidate_score": 1,
+
+            "running_mate": false
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 107,
+
+        "fields": {
+
+            "first_name": "George",
+
+            "last_name": "Timmerman",
+
+            "election": 11,
+
+            "party": "Independent",
+
+            "state": "South Carolina",
+
+            "priority": 3,
+
+            "description": "'",
+
+            "color_hex": "#FFFF00",
+
+            "secondary_color_hex": "#FFFFC0",
+
+            "is_active": 0,
+
+            "image_url": "https://i.imgur.com/Dmpsniy.png",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "'",
+
+            "candidate_score": 1,
+
+            "running_mate": false
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 108,
+
+        "fields": {
+
+            "first_name": "Robert",
+
+            "last_name": "Kerr",
+
+            "election": 11,
+
+            "party": "Democrat",
+
+            "state": "Oklahoma",
+
+            "priority": 4,
+
+            "description": "'",
+
+            "color_hex": "#0000FF",
+
+            "secondary_color_hex": "#90C0FF",
+
+            "is_active": 0,
+
+            "image_url": "https://i.imgur.com/KlqKkVo.png",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "<p>Lyndon Johnson is a powerful member of the Democratic Party, having served as Senate Majority Leader for the past five years. Many Southern states are threatening to bolt to a segregationist ticket -- Johnson is the only person with the clout to save most of those states. Texas will also certainly be lost with any other running mate. At the same time, his vote for the Taft-Hartley labor act in 1947 is still a sore spot for unions, and could dampen their enthusiasm for the ticket.</p>",
+
+            "candidate_score": 0,
+
+            "running_mate": true
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 111,
+
+        "fields": {
+
+            "first_name": "Paul",
+
+            "last_name": "Douglas",
+
+            "election": 11,
+
+            "party": "Democratic",
+
+            "state": "Illinois",
+
+            "priority": 7,
+
+            "description": "'",
+
+            "color_hex": "#FF0000",
+
+            "secondary_color_hex": "#FFA0A0",
+
+            "is_active": 0,
+
+            "image_url": "https://i.imgur.com/P6u6CTv.png",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "<p>Henry Cabot Lodge Jr. has an impeccable pedigree, a great war record, and a career that has seen him serve as a Senator and an Ambassador to the United Nations. He is a committed internationalist and a moderate in the party. He appeals to a similar wing of the party as Nelson Rockefeller, but is much more willing to be the running mate on a Nixon ticket.</p>",
+
+            "candidate_score": 0,
+
+            "running_mate": true
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 112,
+
+        "fields": {
+
+            "first_name": "Jim",
+
+            "last_name": "Folsom",
+
+            "election": 11,
+
+            "party": "Democratic",
+
+            "state": "Alabama",
+
+            "priority": 8,
+
+            "description": "'",
+
+            "color_hex": "#FF0000",
+
+            "secondary_color_hex": "#FFA0A0",
+
+            "is_active": 0,
+
+            "image_url": "https://i.imgur.com/eCIIbYg.png",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "<p>Nelson Rockefeller is the well-known and popular Governor of New York. Currently he refuses to serve as Vice President. However, if he was given assurances that he is the Republican heir apparent, and additional promises that Nixon will run as a liberal Republican with a strong stance on civil rights, he might be persuaded. With Rockefeller on the ticket, victory in New York will be nearly assured, as will defeat in the South.</p>",
+
+            "candidate_score": 0,
+
+            "running_mate": true
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 113,
+
+        "fields": {
+
+            "first_name": "Everett",
+
+            "last_name": "Dirksen",
+
+            "election": 11,
+
+            "party": "Republican",
+
+            "state": "Illinois",
+
+            "priority": 9,
+
+            "description": "'",
+
+            "color_hex": "#FF0000",
+
+            "secondary_color_hex": "#FFA0A0",
+
+            "is_active": 0,
+
+            "image_url": "https://i.imgur.com/Qr2AkTv.png",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "<p>Everett Dirksen is the Senate Minority Leader, an economic conservative and an internationalist in world affairs. He occupies the middle ground of Republican thought, and hails from the key state of Illinois. He would reinforce Nixon's experience argument, having served in Congress for nearly 30 years. There is no large bloc of the party that would be opposed to Dirksen.</p>",
+
+            "candidate_score": 0,
+
+            "running_mate": true
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 114,
+
+        "fields": {
+
+            "first_name": "Strom",
+
+            "last_name": "Thurmond",
+
+            "election": 11,
+
+            "party": "Independent",
+
+            "state": "South Carolina",
+
+            "priority": 10,
+
+            "description": "'",
+
+            "color_hex": "#FFFF00",
+
+            "secondary_color_hex": "#FFFFC0",
+
+            "is_active": 0,
+
+            "image_url": "'",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "'",
+
+            "candidate_score": 0,
+
+            "running_mate": true
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.candidate",
+
+        "pk": 115,
+
+        "fields": {
+
+            "first_name": "Alexander",
+
+            "last_name": "Wiley",
+
+            "election": 11,
+
+            "party": "Republican",
+
+            "state": "Wisconsin",
+
+            "priority": 11,
+
+            "description": "'",
+
+            "color_hex": "#FF0000",
+
+            "secondary_color_hex": "#FFA0A0",
+
+            "is_active": 0,
+
+            "image_url": "https://i.imgur.com/LeDsbGy.png",
+
+            "electoral_victory_message": "'",
+
+            "electoral_loss_message": "'",
+
+            "no_electoral_majority_message": "'",
+
+            "description_as_running_mate": "<p>Barry Goldwater is a Senator from Arizona and the uncontested standard-bearer of conservative Republicans. Goldwater is to the right of the party on taxes, spending, and civil rights. Nelson Rockefeller has threatened to walk out of the convention if Goldwater is selected, which would certainly end any chance of winning New York or the Northeast. However, a Nixon-Goldwater ticket might sweep the South, and his advocates say Goldwater will drive conservative turnout nationwide.</p>",
+
+            "candidate_score": 0,
+
+            "running_mate": true
+
+        }
+
+    }
+
+]
+
+
+
+campaignTrail_temp.running_mate_json = [
+
+    {
+
+        "model": "campaign_trail.running_mate",
+
+        "pk": 74,
+
+        "fields": {
+
+            "candidate": 107,
+
+            "running_mate": 114
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.running_mate",
+
+        "pk": 68,
+
+        "fields": {
+
+            "candidate": 105,
+
+            "running_mate": 108
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.running_mate",
+
+        "pk": 71,
+
+        "fields": {
+
+            "candidate": 105,
+
+            "running_mate": 111
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.running_mate",
+
+        "pk": 73,
+
+        "fields": {
+
+            "candidate": 106,
+
+            "running_mate": 113
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.running_mate",
+
+        "pk": 72,
+
+        "fields": {
+
+            "candidate": 105,
+
+            "running_mate": 112
+
+        }
+
+    },
+
+    {
+
+        "model": "campaign_trail.running_mate",
+
+        "pk": 75,
+
+        "fields": {
+
+            "candidate": 106,
+
+            "running_mate": 115
+
+        }
+
+    }
+
+]
+
+
+
+campaignTrail_temp.credits = "littleamericanman_85501"
+
+
+
+campaignTrail_temp.global_parameter_json = [
+
+    {
+
+        "model": "campaign_trail.global_parameter",
+
+        "pk": 1,
+
+        "fields": {
+
+            "vote_variable": 1.125,
+
+            "max_swing": 0.12,
+
+            "start_point": 0.94,
+
+            "candidate_issue_weight": 10,
+
+            "running_mate_issue_weight": 3,
+
+            "issue_stance_1_max": -0.71,
+
+            "issue_stance_2_max": -0.3,
+
+            "issue_stance_3_max": -0.125,
+
+            "issue_stance_4_max": 0.125,
+
+            "issue_stance_5_max": 0.3,
+
+            "issue_stance_6_max": 0.71,
+
+            "global_variance": 0.01,
+
+            "state_variance": 0.005,
+
+            "question_count": 25,
+
+            "default_map_color_hex": "#C9C9C9",
+
+            "no_state_map_color_hex": "#999999"
+
+        }
+
+    }
+
+]
+
+
+
+campaignTrail_temp.opponents_default_json = [
+
+    {
+
+        "election": 11,
+
+        "candidates": [
+
+            105,
+
+            106,
+
+            107
+
+        ]
+
+    }
+
+]
+
+
+
+campaignTrail_temp.opponents_weighted_json = [
+
+    {
+
+        "election": 11,
+
+        "candidates": [
+
+            105,
+
+            106,
+
+            107
+
+        ]
+
+    }
+
+]
+
+
+
+campaignTrail_temp.temp_election_list = [
+
+    {
+
+        "id": 11,
+
+        "year": 1960,
+
+        "is_premium": 0,
+
+        "display_year": "1956Soapy"
+
+    }
+
+]
+
+
+
+quotes = ["“My retirement does not mean I have retired from loving my country.” ~ Dwight Eisenhower", "“I believe in the art of compromise.” ~ Soapy Williams", "“If pollution ruins the fishing in our streams and lakes for just one season the tourist industry will suffer irreparable harm.” ~ Soapy Williams.", "“The finest steel has to go through the hottest fire.” ~ Richard Nixon", "“If I had feelings, I probably wouldn’t have survived.” ~ Richard Nixon", "“Who is our nominee?” ~ Adlai Stevenson ll", "“Even if I become Vice President, the walls of congress will always be my home.” ~ Everett Dirksen", "“I am just like you, except I struck oil.” ~ Robert Kerr"]
+
+  customquote = quotes[Math.floor((Math.random() * quotes.length))]
+
+corrr = `\n<h2>THE CAMPAIGN TRAIL</h2><font id='wittyquote' size='4' color='white'><em>` + customquote + `</em></font>`
+
+
+
+//#endcode
+
+
+
+// This is a modified version of the music player
+
+// used in the mod 1932 (and other mods).
+
+class Song {
+
+  constructor(title, artist, coverLink, audioOrYouTube) {
+
+    this.title = title;
+
+    this.artist = artist;
+
+    this.coverLink = coverLink;
+
+    // detect and parse YouTube IDs, otherwise treat as a standard audio link
+
+    this.youtubeId = extractYouTubeId(audioOrYouTube);
+
+    this.audioLink = this.youtubeId ? null : (audioOrYouTube || null);
+
+  }
+
+  getTitle() { return this.title; }
+
+  getArtist() { return this.artist; }
+
+  getCoverLink() { return this.coverLink; }
+
+  getAudioLink() { return this.audioLink; }
+
+  getYouTubeId() { return this.youtubeId; }
+
+}
+
+
+
+class Playlist {
+
+  constructor() {
+
+    this.songs = [];
+
+    this.currentSongIndex = 0;
+
+  }
+
+  addSong(song) { this.songs.push(song); }
+
+  getCurrentSong() { return this.songs[this.currentSongIndex]; }
+
+
+
+  playNext() {
+
+    if (this.songs.length === 0) return;
+
+    this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
+
+  }
+
+
+
+  playPrevious() {
+
+    if (this.songs.length === 0) return;
+
+    this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+
+  }
+
+}
+
+
+
+window.Playlist = Playlist;
+
+window.Song = Song;
+
+
+
+let activePlaylist = new Playlist();
+
+let audioInstance = null;
+
+let currentVolume = 6;
+
+
+
+// YouTube URL support
+
+let ytApiReady = false;
+
+let ytPlayer = null;
+
+let ytPlayerReady = false;
+
+let ytConstructing = false;
+
+let ytReadyPending = false;
+
+let ytProgressTimer = null;
+
+let backendVolume = 1;
+
+
+
+const ytHooks = {
+
+  onEnded: null,
+
+  onProgress: null
+
+};
+
+
+
+const ytCallbacks = [];
+
+
+
+function flushYTCallbacks() {
+
+  while (ytCallbacks.length) {
+
+    const cb = ytCallbacks.shift();
+
+    try {
+
+      cb?.();
+
+    } catch (e) {
+
+      console.log("YouTube player callback failed.", e);
+
+    }
+
+  }
+
+}
+
+
+
+function extractYouTubeId(url) {
+
+  if (typeof url !== "string") return null;
+
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/))([\w-]{11})/);
+
+  return match ? match[1] : null;
+
+}
+
+
+
+function isYouTubeSong(song) {
+
+  return !!song?.getYouTubeId?.();
+
+}
+
+
+
+(function injectYouTubeAPI() {
+
+  if (document.getElementById("yt-iframe-api")) return;
+
+  const tag = document.createElement("script");
+
+  tag.id = "yt-iframe-api";
+
+  tag.src = "https://www.youtube.com/iframe_api";
+
+  document.head.appendChild(tag);
+
+})();
+
+
+
+window.onYouTubeIframeAPIReady = function () {
+
+  ytApiReady = true;
+
+};
+
+
+
+function applyVolumeToYT() {
+
+  if (!ytPlayer) return;
+
+  try {
+
+    ytPlayer.setVolume(Math.round(backendVolume * 100));
+
+    if (backendVolume === 0) ytPlayer.mute();
+
+    else ytPlayer.unMute();
+
+  } catch (e) {}
+
+}
+
+
+
+function ensureYTPlayer(onReady) {
+
+  if (onReady) ytCallbacks.push(onReady);
+
+  if (ytPlayer && ytPlayerReady) {
+
+    flushYTCallbacks();
+
+    return;
+
+  }
+
+  if (ytConstructing) return;
+
+
+
+  const createPlayer = () => {
+
+    const holder = document.getElementById("ytplayer") || (() => {
+
+      const el = document.createElement("div");
+
+      el.id = "ytplayer";
+
+      el.style.width = "0px";
+
+      el.style.height = "0px";
+
+      el.style.position = "absolute";
+
+      el.style.overflow = "hidden";
+
+      el.style.pointerEvents = "none";
+
+      document.body.appendChild(el);
+
+      return el;
+
+    })();
+
+
+
+    ytConstructing = true;
+
+    try {
+
+      ytPlayer = new YT.Player(holder, {
+
+        height: "0",
+
+        width: "0",
+
+        videoId: "",
+
+        playerVars: {
+
+          autoplay: 0,
+
+          controls: 0,
+
+          disablekb: 1,
+
+          fs: 0,
+
+          rel: 0,
+
+          playsinline: 1
+
+        },
+
+        events: {
+
+          onReady: () => {
+
+            if (ytConstructing) {
+
+              ytReadyPending = true;
+
+              return;
+
+            }
+
+            ytPlayerReady = true;
+
+            applyVolumeToYT();
+
+            flushYTCallbacks();
+
+          },
+
+          onStateChange: (e) => {
+
+            if (e.data === YT.PlayerState.ENDED) {
+
+              ytHooks.onEnded?.();
+
+            }
+
+            if (e.data === YT.PlayerState.PLAYING) {
+
+              applyVolumeToYT();
+
+            }
+
+          }
+
+        }
+
+      });
+
+    } catch (e) {
+
+      ytConstructing = false;
+
+      console.log("Could not create the YouTube player.", e);
+
+      return;
+
+    }
+
+    ytConstructing = false;
+
+
+
+    if (ytReadyPending) {
+
+      ytReadyPending = false;
+
+      ytPlayerReady = true;
+
+      applyVolumeToYT();
+
+      flushYTCallbacks();
+
+    }
+
+  };
+
+
+
+  if (ytApiReady && window.YT && window.YT.Player) {
+
+    createPlayer();
+
+  } else {
+
+    const timer = setInterval(() => {
+
+      if (ytApiReady && window.YT && window.YT.Player) {
+
+        clearInterval(timer);
+
+        createPlayer();
+
+      }
+
+    }, 50);
+
+  }
+
+}
+
+
+
+function stopYTProgressPump() {
+
+  if (ytProgressTimer) {
+
+    clearInterval(ytProgressTimer);
+
+    ytProgressTimer = null;
+
+  }
+
+}
+
+
+
+function startYTProgressPump() {
+
+  stopYTProgressPump();
+
+  ytProgressTimer = setInterval(() => {
+
+    ytHooks.onProgress?.(backendGetCurrentTime(), backendGetDuration());
+
+  }, 250);
+
+}
+
+
+
+function backendSetSrcAndLoad(song, audio) {
+
+  if (!song) return;
+
+
+
+  if (isYouTubeSong(song)) {
+
+    stopYTProgressPump();
+
+    ensureYTPlayer(() => {
+
+      ytPlayer.loadVideoById(song.getYouTubeId());
+
+      applyVolumeToYT();
+
+    });
+
+    audio.pause();
+
+    audio.removeAttribute("src");
+
+    audio.load();
+
+  } else {
+
+    stopYTProgressPump();
+
+    if (ytPlayer) {
+
+      try { ytPlayer.stopVideo(); } catch (e) {}
+
+    }
+
+    audio.src = song.getAudioLink() || "";
+
+    audio.load();
+
+  }
+
+}
+
+
+
+function ytCurrentSong() { return activePlaylist.getCurrentSong(); }
+
+function ytAudioElement() { return getAudioElement(); }
+
+
+
+function backendPlay(audio) {
+
+  const song = ytCurrentSong();
+
+  if (!song) return Promise.resolve();
+
+
+
+  if (isYouTubeSong(song)) {
+
+    return new Promise((resolve) => {
+
+      ensureYTPlayer(() => {
+
+        ytPlayer.playVideo();
+
+        resolve();
+
+      });
+
+    });
+
+  }
+
+
+
+  return audio.play().catch(e => {
+
+    console.log("Playback deferred for user interaction.", e);
+
+  });
+
+}
+
+
+
+function backendPause(audio) {
+
+  const song = ytCurrentSong();
+
+  if (!song) return;
+
+
+
+  if (isYouTubeSong(song)) {
+
+    ytPlayer?.pauseVideo?.();
+
+  } else {
+
+    audio.pause();
+
+  }
+
+}
+
+
+
+function backendSetVolume(audio, volume) {
+
+  backendVolume = volume;
+
+  audio.volume = volume;
+
+  if (isYouTubeSong(ytCurrentSong())) applyVolumeToYT();
+
+}
+
+
+
+function backendGetCurrentTime() {
+
+  const song = ytCurrentSong();
+
+  if (isYouTubeSong(song) && ytPlayer) return ytPlayer.getCurrentTime?.() || 0;
+
+  const audio = ytAudioElement();
+
+  return audio ? audio.currentTime || 0 : 0;
+
+}
+
+
+
+function backendGetDuration() {
+
+  const song = ytCurrentSong();
+
+  if (isYouTubeSong(song) && ytPlayer) return ytPlayer.getDuration?.() || 0;
+
+  const audio = ytAudioElement();
+
+  return audio ? audio.duration || 0 : 0;
+
+}
+
+
+
+function backendSeekTo(seconds) {
+
+  const song = ytCurrentSong();
+
+  if (isYouTubeSong(song) && ytPlayer) {
+
+    ytPlayer.seekTo(seconds, true);
+
+  } else {
+
+    const audio = ytAudioElement();
+
+    if (audio && Number.isFinite(audio.duration)) audio.currentTime = seconds;
+
+  }
+
+}
+
+
+
+// assets
+
+const ASSETS = {
+
+  bg: "https://itsastronomical.com/assets/1932/imgur/XvHX0fc.png",
+
+  infoBg: "https://itsastronomical.com/assets/1932/imgur/HTUJApX.png",
+
+  lipOverlay: "https://itsastronomical.com/assets/1932/imgur/4vt4JNH.png",
+
+  volDown: "https://itsastronomical.com/assets/1932/imgur/VQfvYev.png",
+
+  btnPrev: "https://itsastronomical.com/assets/1932/imgur/LAojana.png",
+
+  btnPlay: "https://itsastronomical.com/assets/1932/imgur/nzG7asd.png",
+
+  btnPause: "https://itsastronomical.com/assets/1932/imgur/JdndnqR.png",
+
+  btnNext: "https://itsastronomical.com/assets/1932/imgur/VpjQN97.png",
+
+  volUp: "https://itsastronomical.com/assets/1932/imgur/AWjSTLv.png"
+
+};
+
+
+
+function changePlaylist(newPlaylist) {
+
+  activePlaylist = newPlaylist;
+
+  activePlaylist.currentSongIndex = 0;
+
+
+
+  updateUI(activePlaylist);
+
+
+
+  // ensure audio exists before trying to access it
+
+  const audio = getAudioElement();
+
+  const song = activePlaylist.getCurrentSong();
+
+
+
+  if (song) {
+
+    backendSetSrcAndLoad(song, audio);
+
+    startYTProgressPump();
+
+    backendPlay(audio);
+
+    updatePlayPauseIcon(true);
+
+  }
+
+}
+
+window.changePlaylist = changePlaylist;
+
+
+
+function updateUI(playlist) {
+
+  const currentSong = playlist.getCurrentSong();
+
+  const player = document.getElementById("player");
+
+
+
+  if (!player || !currentSong) return;
+
+
+
+  const cover = player.querySelector("#cover");
+
+  const title = player.querySelector("#title");
+
+  const artist = player.querySelector("#artist");
+
+
+
+  if (cover) cover.src = currentSong.getCoverLink();
+
+  if (title) title.textContent = currentSong.getTitle();
+
+  if (artist) artist.textContent = currentSong.getArtist();
+
+}
+
+window.updateUI = updateUI;
+
+
+
+// helpers
+
+function getAudioElement() {
+
+  if (!audioInstance) {
+
+    audioInstance = document.createElement("audio");
+
+    audioInstance.id = "audio";
+
+    document.body.appendChild(audioInstance);
+
+  }
+
+  return audioInstance;
+
+}
+
+
+
+function updatePlayPauseIcon(isPlaying) {
+
+  const btn = document.getElementById("playPauseButton");
+
+  if (btn) {
+
+    btn.src = isPlaying ? ASSETS.btnPause : ASSETS.btnPlay;
+
+  }
+
+}
+
+
+
+function rotateButton(button, direction) {
+
+  if (!button) return;
+
+  const rotationAngle = direction === "left" ? "rotate(-15deg)" : "rotate(15deg)";
+
+  button.style.transform = rotationAngle;
+
+  setTimeout(() => {
+
+    button.style.transform = "rotate(0deg)";
+
+  }, 200);
+
+}
+
+
+
+// setup
+
+function setupMusicPlayer() {
+
+  const gameWindow = document.getElementById("game_window");
+
+  if (!gameWindow) {
+
+    console.warn("game_window element not found. Player will not be attached.");
+
+    return;
+
+  }
+
+
+
+  // prevent duplicate players
+
+  if (document.getElementById("player")) return;
+
+
+
+  const defaultSongs = [
+
+    ["Bouquet Of Roses", "Dick Haymes", "https://i.imgur.com/lJC2tth.png", "https://audio.jukehost.co.uk/591c0e7b-40b0-11f1-a012-fa163edb0845"],
+
+    ["Powder Your Face With Sunshine", "Doris Day", "https://i.imgur.com/w7L07uh.png", "https://audio.jukehost.co.uk/5cab4ee0-40b0-11f1-a012-fa163edb0845"],
+
+    ["Run Joe", "Louis Jordan", "https://i.imgur.com/WYKDgy7.png", "https://audio.jukehost.co.uk/593327b2-40b0-11f1-a012-fa163edb0845"],
+
+    ["Bye And Bye", "Louis Armstrong", "https://i.imgur.com/DSVi4ua.png", "https://audio.jukehost.co.uk/56fe603f-40b0-11f1-a012-fa163edb0845"],
+
+    ["Blue Suede Shoes", "Elvis Presley", "https://i.imgur.com/Hl0ZtFN.png", "https://audio.jukehost.co.uk/01a1c734-ddb1-71c9-bcdb-80e3009619bb"]
+
+  ];
+
+
+
+  if (activePlaylist.songs.length === 0) {
+
+    defaultSongs.forEach(data => activePlaylist.addSong(new Song(...data)));
+
+  }
+
+
+
+  // inject CSS
+
+  const style = document.createElement("style");
+
+  style.textContent = `
+
+    #player {
+
+      position: relative;
+
+      border: 3px solid #5e2f0d;
+
+      display: flex;
+
+      flex-direction: row;
+
+      height: 191px;
+
+      background-image: url("${ASSETS.bg}");
+
+      transition: transform 0.2s ease;
+
+    }
+
+    #lip-overlay {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      z-index: 2;
+
+      pointer-events: none;
+
+      background-image: url("${ASSETS.lipOverlay}");
+
+      background-size: cover;
+
+    }
+
+    #display-box {
+
+      display: flex;
+
+      align-items: center;
+
+      width: 50%;
+
+    }
+
+    #cover {
+
+      width: 176px;
+
+      height: 176px;
+
+      object-fit: cover;
+
+    }
+
+    #info-container {
+
+      display: flex;
+
+      flex-direction: row;
+
+      height: 178px;
+
+      width: 127px;
+
+      margin-top: 3px;
+
+      margin-left: 5px;
+
+      background-image: url("${ASSETS.infoBg}");
+
+      background-size: cover;
+
+      color: #6e441b;
+
+    }
+
+    #song-info {
+
+      width: 100%;
+
+      padding: 10px 10px 0 10px;
+
+      box-sizing: border-box;
+
+    }
+
+    #song-info h3 {
+
+      font-weight: normal;
+
+      margin: 0;
+
+    }
+
+    #controls-container {
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      margin: 10px;
+
+      width: 100%;
+
+      padding-top: 15px;
+
+    }
+
+    #controls {
+
+      display: flex;
+
+      flex-direction: row;
+
+      justify-content: center;
+
+      width: 80%;
+
+      cursor: pointer;
+
+    }
+
+    #controls img {
+
+      transition: transform 0.2s ease;
+
+    }
+
+    #progress-bar-container {
+
+      width: 100%;
+
+    }
+
+    #progress-bar {
+
+      width: 80%;
+
+      margin: auto;
+
+      display: flex;
+
+      margin-top: 20px;
+
+      height: 8px;
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+      border-radius: 5px;
+
+      overflow: hidden;
+
+      cursor: pointer;
+
+    }
+
+    #progress-bar::-webkit-progress-bar {
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    #progress-bar::-webkit-progress-value {
+
+      background-color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    #progress-bar::-moz-progress-bar {
+
+      background-color: rgba(255, 255, 255, 0.5);
+
+    }
+
+  `;
+
+  document.head.appendChild(style);
+
+
+
+  // create HTML
+
+  const playerContainer = document.createElement("div");
+
+  playerContainer.id = "player";
+
+  playerContainer.innerHTML = `
+
+    <div id="display-box">
+
+      <img id="cover" src="" alt="Cover">
+
+      <div id="info-container">
+
+        <div id="song-info">
+
+          <h3 id="title"></h3>
+
+          <p id="artist"></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="controls-container">
+
+      <div id="controls">
+
+        <img id="volumeDownButton" src="${ASSETS.volDown}" alt="Volume Down">
+
+        <img id="prevButton" src="${ASSETS.btnPrev}" alt="Previous">
+
+        <img id="playPauseButton" src="${ASSETS.btnPause}" alt="Play/Pause">
+
+        <img id="nextButton" src="${ASSETS.btnNext}" alt="Next">
+
+        <img id="volumeUpButton" src="${ASSETS.volUp}" alt="Volume Up">
+
+      </div>
+
+      <div id="progress-bar-container">
+
+        <progress id="progress-bar" value="0" max="100"></progress>
+
+      </div>
+
+    </div>
+
+    <div id="lip-overlay"></div>
+
+  `;
+
+
+
+  gameWindow.insertAdjacentElement("afterend", playerContainer);
+
+
+
+  // set up audio & logic
+
+  const audio = getAudioElement();
+
+  const startSong = activePlaylist.getCurrentSong();
+
+  if (startSong) backendSetSrcAndLoad(startSong, audio);
+
+  backendSetVolume(audio, currentVolume / 20);
+
+
+
+  const playPauseBtn = document.getElementById("playPauseButton");
+
+  const prevBtn = document.getElementById("prevButton");
+
+  const nextBtn = document.getElementById("nextButton");
+
+  const volumeUpBtn = document.getElementById("volumeUpButton");
+
+  const volumeDownBtn = document.getElementById("volumeDownButton");
+
+  const progressBar = document.getElementById("progress-bar");
+
+
+
+  // play/pause
+
+  playPauseBtn.addEventListener("click", () => {
+
+    if (isYouTubeSong(ytCurrentSong())) {
+
+      const playing = window.YT?.PlayerState
+
+        ? ytPlayer?.getPlayerState?.() === YT.PlayerState.PLAYING
+
+        : false;
+
+      if (playing) {
+
+        backendPause(audio);
+
+        updatePlayPauseIcon(false);
+
+      } else {
+
+        backendPlay(audio);
+
+        updatePlayPauseIcon(true);
+
+      }
+
+      return;
+
+    }
+
+
+
+    if (audio.paused) {
+
+      backendPlay(audio);
+
+      updatePlayPauseIcon(true);
+
+    } else {
+
+      backendPause(audio);
+
+      updatePlayPauseIcon(false);
+
+    }
+
+  });
+
+
+
+  // next/prev helper
+
+  const playSongAtIndex = () => {
+
+    updateUI(activePlaylist);
+
+    const song = activePlaylist.getCurrentSong();
+
+    if (!song) return;
+
+    backendSetSrcAndLoad(song, audio);
+
+    startYTProgressPump();
+
+    backendPlay(audio);
+
+    updatePlayPauseIcon(true);
+
+  };
+
+
+
+  const advanceToNextSong = () => {
+
+    activePlaylist.playNext();
+
+    playSongAtIndex();
+
+  };
+
+  ytHooks.onEnded = advanceToNextSong;
+
+  const paintProgress = (current, duration) => {
+
+    if (Number.isFinite(duration) && duration > 0) {
+
+      progressBar.value = (current / duration) * 100;
+
+    }
+
+  };
+
+  ytHooks.onProgress = paintProgress;
+
+
+
+  nextBtn.addEventListener("click", () => {
+
+    activePlaylist.playNext();
+
+    playSongAtIndex();
+
+    rotateButton(nextBtn, "right");
+
+  });
+
+
+
+  prevBtn.addEventListener("click", () => {
+
+    activePlaylist.playPrevious();
+
+    playSongAtIndex();
+
+    rotateButton(prevBtn, "left");
+
+  });
+
+
+
+  // volume controls
+
+  volumeUpBtn.addEventListener("click", () => {
+
+    if (currentVolume < 20) {
+
+      currentVolume++;
+
+      backendSetVolume(audio, currentVolume / 20);
+
+      rotateButton(volumeUpBtn, "left");
+
+    }
+
+  });
+
+
+
+  volumeDownBtn.addEventListener("click", () => {
+
+    if (currentVolume > 0) {
+
+      currentVolume--;
+
+      backendSetVolume(audio, currentVolume / 20);
+
+      rotateButton(volumeDownBtn, "right");
+
+    }
+
+  });
+
+
+
+  // progress bar
+
+  audio.addEventListener("timeupdate", () => {
+
+    paintProgress(backendGetCurrentTime(), backendGetDuration());
+
+  });
+
+
+
+  audio.addEventListener("ended", advanceToNextSong);
+
+
+
+  progressBar.addEventListener("click", (e) => {
+
+    const duration = backendGetDuration();
+
+    if (Number.isFinite(duration)) {
+
+      const rect = progressBar.getBoundingClientRect();
+
+      const pos = (e.clientX - rect.left) / rect.width;
+
+      backendSeekTo(pos * duration);
+
+    }
+
+  });
+
+
+
+  progressBar.addEventListener("input", () => {
+
+    const duration = backendGetDuration();
+
+    if (Number.isFinite(duration)) {
+
+      backendSeekTo((progressBar.value / 100) * duration);
+
+    }
+
+  });
+
+
+
+  // initial play
+
+  updateUI(activePlaylist);
+
+  startYTProgressPump();
+
+  backendPlay(audio)
+
+    .then(() => updatePlayPauseIcon(true))
+
+    .catch(() => updatePlayPauseIcon(false));
+
+}
+
+
+
+setupMusicPlayer();
