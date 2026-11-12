@@ -294,7 +294,7 @@ campaignTrail_temp.candidate_json = [
 
             "election": 11,
 
-            "party": "Democratic",
+            "party": "Democrat",
 
             "state": "Illinois",
 
@@ -340,7 +340,7 @@ campaignTrail_temp.candidate_json = [
 
             "election": 11,
 
-            "party": "Democratic",
+            "party": "Democrat",
 
             "state": "Alabama",
 
